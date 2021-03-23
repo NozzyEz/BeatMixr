@@ -1,0 +1,55 @@
+// Variables
+$font-family: sans-serif;
+$header-color: rgb(124, 67, 84);
+$kick-pad-color: rgb(163, 205, 216);
+$kick-pad-color-active: rgb(72, 194, 224);
+$snare-pad-color: rgb(195, 181, 207);
+$snare-pad-color-active: rgb(172, 113, 226);
+$hihat-pad-color: rgb(185, 206, 198);
+$hihat-pad-color-active: rgb(64, 218, 159);
+$btn-background: rgb(87, 87, 87);
+$btn-icon: white;
+
+$glass-color: linear-gradient(
+  125deg,
+  rgba(
+    $color: rgb(42, 25, 46),
+    $alpha: 0.7,
+  ),
+  rgba(
+    $color: #c7414c,
+    $alpha: 0.3,
+  )
+);
+
+$header1: 2.5rem;
+$header2: 3rem;
+$header3: 1.8rem;
+$btn-size: 2.5rem;
+$pad-size: 8rem;
+
+// Mixins
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin glass() {
+  background: $glass-color;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2), 20px -20px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+// Fonts
+@font-face {
+  font-family: 'Rock salt';
+  src: url(../fonts/RockSalt-Regular.ttf);
+}
+// Imports
+@import 'global';
+@import 'header';
+@import 'main';
+@import 'footer';

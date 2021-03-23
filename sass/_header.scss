@@ -1,0 +1,11 @@
+header {
+  // background: $header-color;
+  position: absolute;
+  @include glass();
+  border-radius: 0rem;
+  min-height: 8vh;
+  width: 100%;
+  @include flex(center, center, row);
+  color: white;
+  font-family: 'Rock Salt', cursive;
+}

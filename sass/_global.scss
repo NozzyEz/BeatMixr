@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+}
+
+// Adding this ensures that when we click on a button, we click on the button and not whatever
+// svg graphic we use from font-awesome
+i,
+svg {
+  pointer-events: none;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+.glass {
+  background: $glass-color;
+  box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.2), 20px -20px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
